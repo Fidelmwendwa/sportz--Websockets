@@ -1,4 +1,5 @@
 import express from "express";
+import { matchRouter } from "./routes/matches.js";
 
 const app = express();
 const PORT = 8000;
@@ -12,6 +13,9 @@ app.get("/", (req, res) => {
         message: "Sportz Live API is running",
     });
 });
+
+// Routes
+app.use("/matches", matchRouter);
 
 // Start server
 app.listen(PORT, () => {
