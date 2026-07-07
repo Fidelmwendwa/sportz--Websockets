@@ -27,6 +27,11 @@ const { broadcastMatchCreated } = attachWebSocketServer(server);
 app.locals.broadcastMatchCreated = broadcastMatchCreated;
 
 // Start server
+server.on("error", (error) => {
+    console.error(`Failed to start server: ${error.message}`);
+    process.exit(1);
+});
+
 server.listen(PORT, HOST, () => {
     const baseUrl =
         HOST === "0.0.0.0"

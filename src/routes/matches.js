@@ -8,16 +8,21 @@ export const matchRouter = Router();
 // GET all matches
 matchRouter.get("/", async (req, res) => {
     try {
+        const limit = Math.min(Number(req.query.limit) || 100, 1000);
+        const offset = Number(req.query.offset) || 0;
+
         const allMatches = await db
             .select()
             .from(matches)
-            .orderBy(desc(matches.createdAt));
+            .orderBy(desc(matches.createdAt))
+            .limit(limit)
+            .offset(offset);
 
         res.status(200).json(allMatches);
     } catch (error) {
+        console.error("Failed to fetch matches:", error);
         res.status(500).json({
             error: "Failed to fetch matches.",
-            details: error.message,
         });
     }
 });
@@ -44,9 +49,9 @@ matchRouter.post("/", async (req, res) => {
             data: newMatch,
         });
     } catch (error) {
+        console.error("Failed to create match:", error);
         res.status(500).json({
             error: "Failed to create match.",
-            details: error.message,
         });
     }
 });

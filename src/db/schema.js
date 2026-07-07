@@ -54,4 +54,4 @@ export const commentary = pgTable("commentary", {
 export const createMatchSchema = createInsertSchema(matches, {
   startTime: z.coerce.date(),
   endTime: z.coerce.date().nullable().optional(),
-});
+}).omit({ id: true, createdAt: true });
