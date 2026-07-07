@@ -1,88 +1,57 @@
 import { Router } from "express";
-import { desc } from "drizzle-orm";
-
 import { db } from "../db/db.js";
-import { matches } from "../db/schema.js";
-import {
-    createMatchSchema,
-    listMatchesQuerySchema,
-} from "../validation/matches.js";
-import { getMatchStatus } from "../utils/match-status.js";
+import { matches, createMatchSchema } from "../db/schema.js";
+import { desc } from "drizzle-orm";
 
 export const matchRouter = Router();
 
-const MAX_LIMIT = 100;
-
-// GET /matches
+// GET all matches
 matchRouter.get("/", async (req, res) => {
-    const parsed = listMatchesQuerySchema.safeParse(req.query);
-
-    if (!parsed.success) {
-        return res.status(400).json({
-            error: "Invalid query.",
-            details: parsed.error.flatten(),
-        });
-    }
-
-    const limit = Math.min(parsed.data.limit ?? 50, MAX_LIMIT);
-
     try {
-        const data = await db
+        const limit = Math.min(Number(req.query.limit) || 100, 1000);
+        const offset = Number(req.query.offset) || 0;
+
+        const allMatches = await db
             .select()
             .from(matches)
             .orderBy(desc(matches.createdAt))
-            .limit(limit);
+            .limit(limit)
+            .offset(offset);
 
-        return res.status(200).json({ data });
+        res.status(200).json(allMatches);
     } catch (error) {
-        console.error(error);
-
-        return res.status(500).json({
-            error: "Failed to list matches.",
+        console.error("Failed to fetch matches:", error);
+        res.status(500).json({
+            error: "Failed to fetch matches.",
         });
     }
 });
 
-// POST /matches
+// POST create match
 matchRouter.post("/", async (req, res) => {
-    const parsed = createMatchSchema.safeParse(req.body);
-
-    if (!parsed.success) {
-        return res.status(400).json({
-            error: "Invalid payload.",
-            details: parsed.error.flatten(),
-        });
-    }
-
-    const {
-        startTime,
-        endTime,
-        homeScore,
-        awayScore,
-    } = parsed.data;
-
     try {
-        const [event] = await db
+        // Validate request body
+        const matchData = createMatchSchema.parse(req.body);
+
+        // Insert into database
+        const [newMatch] = await db
             .insert(matches)
-            .values({
-                ...parsed.data,
-                startTime: new Date(startTime),
-                endTime: new Date(endTime),
-                homeScore: homeScore ?? 0,
-                awayScore: awayScore ?? 0,
-                status: getMatchStatus(startTime, endTime),
-            })
+            .values(matchData)
             .returning();
 
-        return res.status(201).json({
-            data: event,
+        // Broadcast to all WebSocket clients
+        if (typeof req.app.locals.broadcastMatchCreated === "function") {
+            req.app.locals.broadcastMatchCreated(newMatch);
+        }
+
+        res.status(201).json({
+            message: "Match created successfully.",
+            data: newMatch,
         });
     } catch (error) {
-        console.error(error);
-
-        return res.status(500).json({
+        console.error("Failed to create match:", error);
+        res.status(500).json({
             error: "Failed to create match.",
-            details: error.message,
         });
     }
 });
