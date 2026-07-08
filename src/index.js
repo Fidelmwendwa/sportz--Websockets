@@ -2,7 +2,7 @@ import express from "express";
 import http from "http";
 import { matchRouter } from "./routes/matches.js";
 import { attachWebSocketServer } from "./ws/server.js";
-import {securityMiddleware} from "./arcjet.js";
+import {securityMiddleware, wsArcjet} from "./arcjet.js";
 
 const app = express();
 const server = http.createServer(app);
@@ -12,6 +12,7 @@ const HOST = process.env.HOST || "0.0.0.0";
 
 // Middleware
 app.use(express.json());
+app.use(securityMiddleware());
 
 // Root route
 app.get("/", (req, res) => {
@@ -20,13 +21,11 @@ app.get("/", (req, res) => {
     });
 });
 
-app.use(securityMiddleware());
-
 // Routes
 app.use("/matches", matchRouter);
 
 // Attach WebSocket server
-const { broadcastMatchCreated } = attachWebSocketServer(server);
+const { broadcastMatchCreated } = attachWebSocketServer(server, wsArcjet);
 app.locals.broadcastMatchCreated = broadcastMatchCreated;
 
 // Start server
