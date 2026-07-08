@@ -2,6 +2,7 @@ import express from "express";
 import http from "http";
 import { matchRouter } from "./routes/matches.js";
 import { attachWebSocketServer } from "./ws/server.js";
+import {securityMiddleware} from "./arcjet.js";
 
 const app = express();
 const server = http.createServer(app);
@@ -18,6 +19,8 @@ app.get("/", (req, res) => {
         message: "Sportz Live API is running",
     });
 });
+
+app.use(securityMiddleware());
 
 // Routes
 app.use("/matches", matchRouter);

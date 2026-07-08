@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Test</title>
+</head>
+<body>
+
+<h2>Testing WebSocket Connections</h2>
+
+<script>
+    for (let i = 0; i < 10; i++) {
+
+        const ws = new WebSocket("ws://localhost:8000/ws");
+
+        ws.onopen = () => {
+            console.log(`Socket ${i} opened`);
+        };
+
+        ws.onclose = (event) => {
+            console.log(
+                `Socket ${i} closed: ${event.code} ${event.reason}`
+            );
+        };
+
+        ws.onerror = (error) => {
+            console.log(`Socket ${i} error`, error);
+        };
+
+        ws.onmessage = (message) => {
+            console.log(`Socket ${i} received:`, message.data);
+        };
+
+    }
+</script>
+
+</body>
+</html>
