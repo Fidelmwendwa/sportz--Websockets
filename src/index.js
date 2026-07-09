@@ -1,6 +1,7 @@
 import express from "express";
 import http from "http";
 import { matchRouter } from "./routes/matches.js";
+import { commentaryRouter } from "./routes/commentary.js";
 import { attachWebSocketServer } from "./ws/server.js";
 import {securityMiddleware, wsArcjet} from "./arcjet.js";
 
@@ -17,17 +18,18 @@ app.use(securityMiddleware());
 // Root route
 app.get("/", (req, res) => {
     res.status(200).json({
-        message: "Sportz Live API is running",
+        message: "Hello from Express server",
     });
 });
 
 // Routes
 app.use("/matches", matchRouter);
+app.use("/matches/:id/commentary", commentaryRouter);
 
 // Attach WebSocket server
-const { broadcastMatchCreated } = attachWebSocketServer(server, wsArcjet);
+const { broadcastMatchCreated,broadcastCommentary } = attachWebSocketServer(server, wsArcjet);
 app.locals.broadcastMatchCreated = broadcastMatchCreated;
-
+app.locals.broadcastCommentary = broadcastCommentary;
 // Start server
 server.on("error", (error) => {
     console.error(`Failed to start server: ${error.message}`);
