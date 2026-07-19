@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a1f830a-864d-47d3-9fe7-740b006ee9d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +38,22 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000000000655" />
-      <entry key="S5" value="1.0000148304288172" />
-      <entry key="S10" value="1.013295792558113" />
-      <entry key="S30" value="2.4806852466461815" />
-      <entry key="S60" value="6.257755781636296" />
-      <entry key="M2" value="12.376243429931868" />
-      <entry key="M5" value="22.89512495832678" />
-      <entry key="M10" value="33.76651892687953" />
-      <entry key="M15" value="45.239269838057076" />
-      <entry key="M30" value="87.85593138119799" />
-      <entry key="H1" value="169.00961148760726" />
-      <entry key="H2" value="263.00679010447533" />
-      <entry key="H4" value="337.8245195768525" />
-      <entry key="D1" value="432.7756973511851" />
-      <entry key="W1" value="2631.334043135343" />
+      <entry key="MS500" value="1.0004849100973632" />
+      <entry key="S2" value="1.1585179462934243" />
+      <entry key="S5" value="1.7063533196243241" />
+      <entry key="S10" value="2.3752269095189167" />
+      <entry key="S30" value="3.284659524779441" />
+      <entry key="S60" value="3.6141085904567554" />
+      <entry key="M2" value="3.7993874175545934" />
+      <entry key="M5" value="3.9178303267771777" />
+      <entry key="M10" value="3.958591833079206" />
+      <entry key="M15" value="3.9737824392945917" />
+      <entry key="M30" value="4.54238295377234" />
+      <entry key="H1" value="18.107683121037407" />
+      <entry key="H2" value="84.80692277696366" />
+      <entry key="H4" value="204.832744251837" />
+      <entry key="D1" value="450.7676185984098" />
+      <entry key="W1" value="2660.079639766672" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -64,33 +65,33 @@
       <entry key="S60" value="0.0" />
       <entry key="M2" value="0.0" />
       <entry key="M5" value="0.0" />
-      <entry key="M10" value="2.818370650811001E-253" />
-      <entry key="M15" value="5.1678645429248494E-169" />
-      <entry key="M30" value="9.906341597596937E-85" />
-      <entry key="H1" value="1.3980532976662325E-42" />
-      <entry key="H2" value="1.6695616795319307E-21" />
-      <entry key="H4" value="5.827973729816189E-11" />
-      <entry key="D1" value="0.06017834852880986" />
-      <entry key="W1" value="7.222729858421587" />
+      <entry key="M10" value="1.1268584897184757E-260" />
+      <entry key="M15" value="6.04262027965798E-174" />
+      <entry key="M30" value="3.3874304776293425E-87" />
+      <entry key="H1" value="8.175273181782939E-44" />
+      <entry key="H2" value="4.037306684714084E-22" />
+      <entry key="H4" value="2.8659078488348346E-11" />
+      <entry key="D1" value="0.05346435986253653" />
+      <entry key="W1" value="7.101694050491211" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9330329915368074" />
-      <entry key="MS500" value="0.9862327044933592" />
-      <entry key="S2" value="0.9965402628279326" />
-      <entry key="S5" value="0.9986294331412439" />
-      <entry key="S10" value="1.0125679682934128" />
-      <entry key="S30" value="2.478920550166996" />
-      <entry key="S60" value="6.254784697401554" />
-      <entry key="M2" value="12.37294342799502" />
-      <entry key="M5" value="22.892450621034413" />
-      <entry key="M10" value="33.76404754737563" />
-      <entry key="M15" value="45.236433782787365" />
-      <entry key="M30" value="87.85219735503232" />
-      <entry key="H1" value="169.00587121418346" />
-      <entry key="H2" value="263.0039864123802" />
-      <entry key="H4" value="337.82277777849185" />
-      <entry key="D1" value="432.8354540726822" />
-      <entry key="W1" value="2638.5545880232294" />
+      <entry key="MS100" value="1.342633210503964E-13" />
+      <entry key="MS500" value="0.002672585447167621" />
+      <entry key="S2" value="0.28736693621493953" />
+      <entry key="S5" value="1.0644996642977018" />
+      <entry key="S10" value="1.9343072340620844" />
+      <entry key="S30" value="3.091795616728071" />
+      <entry key="S60" value="3.5099161303953212" />
+      <entry key="M2" value="3.745150613933511" />
+      <entry key="M5" value="3.8955936171675574" />
+      <entry key="M10" value="3.9473806746685676" />
+      <entry key="M15" value="3.966287380272284" />
+      <entry key="M30" value="4.538596404373964" />
+      <entry key="H1" value="18.10544823067914" />
+      <entry key="H2" value="84.80502616661911" />
+      <entry key="H4" value="204.83113556733935" />
+      <entry key="D1" value="450.8205453146949" />
+      <entry key="W1" value="2667.1791608819385" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -156,7 +157,7 @@
       <workItem from="1783920345103" duration="4673000" />
       <workItem from="1783925920133" duration="1682000" />
       <workItem from="1783954191241" duration="13696000" />
-      <workItem from="1784455856974" duration="2289000" />
+      <workItem from="1784455856974" duration="3457000" />
     </task>
     <servers />
   </component>
@@ -172,7 +173,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/index.js</url>
-          <line>32</line>
+          <line>37</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
