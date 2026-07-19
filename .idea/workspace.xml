@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a1f830a-864d-47d3-9fe7-740b006ee9d6" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="33" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fidelmwendwa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Fidelmwendwa/sportz--Websockets.git&quot;,
+    &quot;accountId&quot;: &quot;d81a02a6-52d5-4b13-a702-bbd91802e6f5&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000000304466" />
+      <entry key="S5" value="1.0001561062686746" />
+      <entry key="S10" value="1.012638503647847" />
+      <entry key="S30" value="1.5199625641781829" />
+      <entry key="S60" value="3.454963525132123" />
+      <entry key="M2" value="7.225194025219088" />
+      <entry key="M5" value="13.996430004635572" />
+      <entry key="M10" value="22.769516999900056" />
+      <entry key="M15" value="33.7488925137816" />
+      <entry key="M30" value="76.49278020075906" />
+      <entry key="H1" value="157.5714489943692" />
+      <entry key="H2" value="250.36764141650852" />
+      <entry key="H4" value="323.63124600549395" />
+      <entry key="D1" value="416.375798115192" />
+      <entry key="W1" value="2614.862629526038" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="3.452866821230883E-253" />
+      <entry key="M15" value="5.916964110166056E-169" />
+      <entry key="M30" value="1.0600032729945174E-84" />
+      <entry key="H1" value="1.446174440423991E-42" />
+      <entry key="H2" value="1.6980518400245792E-21" />
+      <entry key="H4" value="5.877488983987895E-11" />
+      <entry key="D1" value="0.06026326232366542" />
+      <entry key="W1" value="7.224184911499636" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8950250709279725" />
+      <entry key="MS500" value="0.9780634734473393" />
+      <entry key="S2" value="0.994470168976627" />
+      <entry key="S5" value="0.9979402771177739" />
+      <entry key="S10" value="1.0115207121500935" />
+      <entry key="S30" value="1.519080871533456" />
+      <entry key="S60" value="3.4531875771982605" />
+      <entry key="M2" value="7.222990548321027" />
+      <entry key="M5" value="13.994584326148717" />
+      <entry key="M10" value="22.767490091238532" />
+      <entry key="M15" value="33.74629508727113" />
+      <entry key="M30" value="76.48910104724146" />
+      <entry key="H1" value="157.567736069299" />
+      <entry key="H2" value="250.36486740957716" />
+      <entry key="H4" value="323.62952804460645" />
+      <entry key="D1" value="416.4356455771289" />
+      <entry key="W1" value="2622.0846299437635" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Fzluz2XZ2IPpKMACK34DPGKPMb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\Git\\WebStorm 2026.1.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\WebstormProjects\sportz" />
+      <recent name="C:\Users\USER\WebstormProjects\sportz\src\db" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.25134.101" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a1f830a-864d-47d3-9fe7-740b006ee9d6" name="Changes" comment="" />
+      <created>1783086004664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783086004664</updated>
+      <workItem from="1783086005551" duration="8951000" />
+      <workItem from="1783109472434" duration="8469000" />
+      <workItem from="1783318330865" duration="17325000" />
+      <workItem from="1783342800154" duration="23418000" />
+      <workItem from="1783488953297" duration="26285000" />
+      <workItem from="1783581123751" duration="10422000" />
+      <workItem from="1783920345103" duration="4673000" />
+      <workItem from="1783925920133" duration="1682000" />
+      <workItem from="1783954191241" duration="12813000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/db/db.js</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/index.js</url>
+          <line>32</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/index.js</url>
+          <line>3</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
