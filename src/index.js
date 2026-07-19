@@ -8,6 +8,7 @@ import { attachWebSocketServer } from "./ws/server.js";
 import {securityMiddleware, wsArcjet} from "./arcjet.js";
 
 const app = express();
+app.set("trust proxy", true);
 const server = http.createServer(app);
 
 const PORT = Number(process.env.PORT) || 8000;
