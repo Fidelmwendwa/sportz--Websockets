@@ -60,18 +60,22 @@ commentaryRouter.post("/", async (req, res) => {
             })
             .returning();
 
-        // Broadcast commentary to subscribed WebSocket clients
-        if (typeof req.app.locals.broadcastCommentary === "function") {
-            req.app.locals.broadcastCommentary(
-                newCommentary.matchId,
-                newCommentary
-            );
-        }
-
         res.status(201).json({
             message: "Commentary created successfully.",
             data: newCommentary,
         });
+
+        // Broadcast commentary to subscribed WebSocket clients after persistence succeeds.
+        try {
+            if (typeof req.app.locals.broadcastCommentary === "function") {
+                req.app.locals.broadcastCommentary(
+                    newCommentary.matchId,
+                    newCommentary
+                );
+            }
+        } catch (broadcastError) {
+            console.error("Failed to broadcast commentary:", broadcastError);
+        }
     } catch (error) {
         if (error instanceof ZodError) {
             return res.status(400).json({
@@ -85,18 +89,5 @@ commentaryRouter.post("/", async (req, res) => {
         return res.status(500).json({
             error: "Failed to create commentary.",
         });
-        console.log("New commentary:",
-        newCommentary);
-
-        if (req.app.locals.broadcastCommentary)
-        {
-            console.log("Broadcasting" +
-                "commentary...");
-            req.app.locals.broadcastCommentary(
-                newCommentary.matchId,
-                newCommentary
-
-            );
-        }
     }
 });
